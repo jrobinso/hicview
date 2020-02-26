@@ -1,0 +1,11 @@
+{
+  "name": "hicviewer",
+  "license": "MIT",
+  "author": {
+    "name": "Jim Robinson"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "hic-straw": "^1.0.0"
+  }
+}

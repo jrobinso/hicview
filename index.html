@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hicview</title>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jstree/3.3.8/themes/default/style.min.css"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jstree/3.3.8/jstree.min.js"></script>
+
+    <link rel="stylesheet" href="css/hicview.css"/>
+
+</head>
+<body>
+
+<div class="container">
+    <h1>.hic file viewer</h1>
+    <p>
+        <label>Local File
+            <input accept=".hic" id="fileWidget"type="file"/>
+        </label>
+    </p>
+    <p>
+        <label>URL
+            <input id="urlWidget" style='width:500px'/>
+        </label>
+        <button id="urlLoadButton">Load</button>
+    </p>
+
+    <div class="flex-grid">
+        <aside class="col sidebar">
+            <div id="tree"></div>
+        </aside>
+        <section class="col main">
+            <pre id="content"></pre>
+        </section>
+    </div>
+</div>
+
+
+<script type="module">
+
+    import {init} from "./src/main.js";
+
+    init();
+
+    //loadFile({url: "https://hicfiles.s3.amazonaws.com/hiseq/gm12878/in-situ/HIC012.hic"})
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+.container {
+    margin: auto;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.flex-grid {
+    display: flex;
+    margin: auto -1rem 1rem;
+}
+
+.col {
+    border: black;
+    border-style: solid;
+    border-color: gray;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 1rem;
+}
+
+.sidebar {
+    flex: 0 0 50px;
+}
+
+.main {
+    flex-grow: 1;
+}
