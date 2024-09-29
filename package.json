@@ -5,7 +5,7 @@
     "name": "Jim Robinson"
   },
   "devDependencies": {
-    "rollup": "^1.31.1"
+    "rollup": "^2.79.2"
   },
   "dependencies": {
     "hic-straw": "^1.0.0"
